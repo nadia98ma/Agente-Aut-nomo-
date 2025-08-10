@@ -6,7 +6,9 @@ from pathlib import Path
 from playwright.async_api import async_playwright
 import asyncio, datetime, os, zipfile
 
-app = FastAPI()app.mount("/videos", StaticFiles(directory="videos"), name="videos")
+app = FastAPI()
+
+app.mount("/videos", StaticFiles(directory="videos"), name="videos")
 BASE = Path(__file__).parent
 STATIC = BASE / "static"
 VIDEOS = BASE / "videos"
