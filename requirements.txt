@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+jinja2
+httpx
+beautifulsoup4
+pydantic
+tenacity
+playwright
+python-multipart
+aiofiles
